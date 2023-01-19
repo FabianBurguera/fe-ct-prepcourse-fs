@@ -148,10 +148,10 @@ function operadoresLogicos(num1, num2, num3) {
       return "Error"
    }
    else if (num1<0 || num2<0 || num3<0){
-      console.log('Hay negativos');
+      return 'Hay negativos';
    }
    else if (num1>num2 && num1>num3 && num1>0) {
-      console.log ('Numero 1 es mayor y positivo');
+      return 'Numero 1 es mayor y positivo';
    }
    else if (num3>num1 && num3>num2) {
       num3=num3+1 ;
@@ -169,12 +169,20 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
+  if (num===1 ||num===0){
+   return false ;
+  }
+  if (num===2){
+   return true;
+  }
    for (var i=2 ; i<num ;i++ ){
-    if (num===2 || num%i===0) {
+    if (num%i===0) {
       return false ;
     }
    }
-   return true 
+   return true ;
+   
+
 }
 
 function esVerdadero(valor) {
@@ -191,7 +199,7 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
-   if (num%100>=1 && num%100<10){
+   if (num/100>=1 && num/100<10){
       return true;
    }
    return false;
