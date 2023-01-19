@@ -60,7 +60,7 @@ function saludo(idioma) {
     return  "Ni Hao!";
 
 
-case  "Ingles":
+case  "ingles":
     return  "Hello!";
 
  default:
@@ -78,13 +78,13 @@ function colors(color) {
    // Tu código:
    switch (color) {
       case "blue":
-      return "this is blue";
+      return "This is blue";
       case "red":
-      return "this is red";
+      return "This is red";
       case "green":
-      return "this is green" ;
+      return "This is green" ;
       case "orange":
-      return "this is orange" ;
+      return "This is orange" ;
       default :
       return "Color not found"
 
