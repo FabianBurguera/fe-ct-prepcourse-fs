@@ -169,7 +169,7 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-  if (num===1 ||num===0){
+  if (num < 2 ){
    return false ;
   }
   if (num===2){
