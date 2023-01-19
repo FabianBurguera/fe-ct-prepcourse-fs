@@ -137,12 +137,29 @@ function fizzBuzz(num) {
 
 function operadoresLogicos(num1, num2, num3) {
    // La función recibe tres números distintos.
-   // Si num1 es mayor a num2 y a num3, y además es positivo, retornar ---> "Numero 1 es mayor y positivo".
+   // Si num1 es mayor a num2 y a num3, y además es positivo, retornar ---> 
+   //"Numero 1 es mayor y positivo".
    // Si alguno de los tres números es negativo, retornar ---> "Hay negativos".
    // Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
    // Si alguno de los argumentos es cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
+   if (num1==0 || num2==0 || num3==0){
+      return "Error"
+   }
+   else if (num1<0 || num2<0 || num3<0){
+      console.log('Hay negativos');
+   }
+   else if (num1>num2 && num1>num3 && num1>0) {
+      console.log ('Numero 1 es mayor y positivo');
+   }
+   else if (num3>num1 && num3>num2) {
+      num3=num3+1 ;
+      return num3 ;
+   }
+   else {
+      return false;
+   }
 }
 
 function esPrimo(num) {
@@ -152,18 +169,32 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
+   for (var i=2 ; i<num ;i++ ){
+    if (num===2 || num%i===0) {
+      return false ;
+    }
+   }
+   return true 
 }
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+   if (valor===true) {
+      return "Soy verdadero" ;
+   }
+   return "Soy falso"
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
+   if (num%100>=1 && num%100<10){
+      return true;
+   }
+   return false;
 }
 
 function doWhile(num) {
@@ -171,6 +202,17 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+   let cont=0;
+   let nuevonum=num;
+
+   do {
+      nuevonum=nuevonum+5;
+      cont++;
+   }
+   while (cont<8){
+ return nuevonum;
+}
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
