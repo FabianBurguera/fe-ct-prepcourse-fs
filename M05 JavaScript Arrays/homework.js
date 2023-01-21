@@ -23,10 +23,12 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   var nuevoarray =[]
    for (let i=0 ; i<array.length ; i++){
-      array[i]=array[i] +1;
-      return array[i];
+      nuevoarray[i]=array[i] +1;
    }
+      return nuevoarray;
+   
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -51,7 +53,7 @@ function dePalabrasAFrase(palabras) {
    // con un espacio entre cada palabra.
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
-   palabras.join(' ');
+   return palabras.join(' ');
 }
 
 function arrayContiene(array, elemento) {
@@ -73,12 +75,12 @@ function agregarNumeros(arrayOfNums) {
    // Tu código:
    let cont=0 ;
    for (let i=0 ; i<arrayOfNums.length ; i++){
-   cont==cont+arrayOfNums[i]
+   cont=cont+arrayOfNums[i] ;
    }
    
-      return cont ;
-   
+      return cont ; 
 }
+
 
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
@@ -87,7 +89,7 @@ function promedioResultadosTest(resultadosTest) {
    let suma=0 ;
    let promedio ;
    for (let i=0 ; i<resultadosTest.length ; i++){
-   suma=suma+arrayOfNums[i];
+   suma=suma+resultadosTest[i];
    }
    promedio=suma/resultadosTest.length ;
       return promedio ;
@@ -131,10 +133,12 @@ function cuentoElementos(array) {
    // Desarrolla una función que retorne la 
    //cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
+   var cont= 0 ;
    for (var i=0 ; i<array.length ; i++){
       if (array[i]>18){
-      return array[i];
+      cont = cont++;
       }
+      return cont ;
    }
 
 }
@@ -156,7 +160,7 @@ function empiezaConNueve(num) {
    // Debe retornar True si el entero inicia con 9 y False en otro caso.
    // Tu código:
    let numero=num.toString()
-   if (numero.charAT(0)==="9"){
+   if (numero.charAt(0)==="9"){
       return true;
 }
 return false ;
@@ -219,6 +223,7 @@ function mayorACien(array) {
      if (array[i]>100){
       arreglo.push(array[i]);
      }
+     return arreglo ;
    }
 }
 
@@ -236,15 +241,22 @@ function breakStatement(num) {
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
    var arreglo = [];
-   contador=num;
+   var contador=num;
+   var interr = 0;
    for (i=0 ; i<10 ; i++){
       if (contador===i){
-         break ;
+         interr ++
       }
    contador= contador + 2 ;
    arreglo.push(contador) ;
    }
-   return arreglo ; 
+   if (interr=0){
+      return arreglo ;
+   }
+   else {
+      return "Se interrumpio la ejecucion"
+   }
+ 
 }
 
 function continueStatement(num) {
