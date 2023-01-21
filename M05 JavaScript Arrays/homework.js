@@ -136,10 +136,10 @@ function cuentoElementos(array) {
    var cont= 0 ;
    for (var i=0 ; i<array.length ; i++){
       if (array[i]>18){
-      cont = cont++;
-      }
+      cont++;
+      }}
       return cont ;
-   }
+   
 
 }
 
@@ -223,8 +223,8 @@ function mayorACien(array) {
      if (array[i]>100){
       arreglo.push(array[i]);
      }
-     return arreglo ;
    }
+   return arreglo ;
 }
 
 
