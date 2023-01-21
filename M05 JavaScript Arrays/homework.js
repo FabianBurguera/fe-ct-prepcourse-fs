@@ -254,7 +254,7 @@ function breakStatement(num) {
       return arreglo ;
    }
    else {
-      return "Se interrumpió la ejecucion"
+      return "Se interrumpió la ejecución"
    }
  
 }
