@@ -241,20 +241,20 @@ function breakStatement(num) {
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
    var arreglo = [];
-   var contador=num;
+   var suma=num;
    var interr = 0;
    for (i=0 ; i<10 ; i++){
-      if (contador===i){
+      if (suma===i){
          interr ++
       }
-   contador= contador + 2 ;
-   arreglo.push(contador) ;
+   suma= suma + 2 ;
+   arreglo.push(suma) ;
    }
-   if (interr=0){
-      return arreglo ;
+   if (interr!=0){
+      return "Se interrumpió la ejecución" ;
    }
    else {
-      return "Se interrumpió la ejecución"
+      return arreglo ;
    }
  
 }
