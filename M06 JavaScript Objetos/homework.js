@@ -76,12 +76,8 @@ function tieneEmail(objetoUsuario) {
    // En ese caso retornar True. Caso contrario, False.
    // Tu código:
 
- if  (objetoUsuario.hasOwnProperty[email]) {
-   return true ;
- }
- return false ;
+   return objetoUsuario.hasOwnProperty('email') ;
 }
-
 function tienePropiedad(objeto, propiedad) {
    // Verifica si el objeto recibido posee una
    // propiedad con el mismo nombre que el parámetro "propiedad".
@@ -126,7 +122,7 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // Retornar el arreglo.
    // Tu código:
    for (var i=0 ; i<objetoMuchosUsuarios.length ; i++){
- usuarios[i].esPremium = true
+ objetoMuchosUsuarios[i].esPremium = true ;
  } 
  return objetoMuchosUsuarios ;
 }
@@ -138,8 +134,8 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Debes sumar los likes de todos los post y retornar el resultado.
    // Tu código:
    var contador = 0 ;
-   for (var i=0 ;i<objetoUsuario.post.length ; i++ ){
-     contador = contador + post[i].likes ;
+   for (var i=0 ;i<objetoUsuario.posts.length ; i++ ){
+     contador = contador + posts[i].likes ;
 }
 return contador ;
 }
