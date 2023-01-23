@@ -75,7 +75,11 @@ function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
    // En ese caso retornar True. Caso contrario, False.
    // Tu código:
- return objetoUsuario.hasOwnProperty(email) ;
+
+ if  (objetoUsuario.hasOwnProperty(email)) {
+   return true ;
+ }
+ return false ;
 }
 
 function tienePropiedad(objeto, propiedad) {
@@ -121,8 +125,8 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // Define esta propiedad de todos los usuarios como True.
    // Retornar el arreglo.
    // Tu código:
-   for (var i=0 ; i<objetoMuchosUsuarios.usuarios.length ; i++){
- objetoMuchosUsuarios[i].usuarios.esPremium = true
+   for (var i=0 ; i<usuarios.length ; i++){
+ usuarios[i].esPremium = true
  } 
  return objetoMuchosUsuarios ;
 }
@@ -134,8 +138,8 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Debes sumar los likes de todos los post y retornar el resultado.
    // Tu código:
    var contador = 0 ;
-   for (var i=0 ;i<objetoUsuario.posts.length ; i++ ){
-     contador = contador + posts[i].post.likes ;
+   for (var i=0 ;i<objetoUsuario.post.length ; i++ ){
+     contador = contador + post[i].likes ;
 }
 return contador ;
 }
@@ -153,7 +157,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
    // PorcentajeDeDescuento ---> 0.2
    // Precio final ---> 8
    // Tu código:
-  objetoProducto.calcularPrecioDescuento = function (){
+  this.calcularPrecioDescuento = function (){
    var PrecioDescuento = objetoProducto.precio * objetoProducto.porcentajeDeDescuento ;
    var PrecioFinal = precio - PrecioDescuento ;
    return PrecioFinal ; 
