@@ -161,6 +161,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
    var nuevoPrecio = this.precio - ( this.precio * this.porcentajeDeDescuento) ;
    return nuevoPrecio ; 
  };
+ return calcularPrecioDescuento ;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
