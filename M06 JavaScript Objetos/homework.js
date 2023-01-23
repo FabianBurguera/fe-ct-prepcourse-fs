@@ -139,7 +139,7 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Tu código:
    var contador = 0 ;
    for (var i=0 ;i<objetoUsuario.posts.length ; i++ ){
-     contador = contador + this.posts[i].likes ;
+     contador = contador + objetoUsuario.posts[i].likes ;
 }
 return contador ;
 }
