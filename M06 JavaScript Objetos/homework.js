@@ -76,7 +76,7 @@ function tieneEmail(objetoUsuario) {
    // En ese caso retornar True. Caso contrario, False.
    // Tu código:
 
- if  (objetoUsuario.hasOwnProperty(email)) {
+ if  (objetoUsuario.hasOwnProperty[email]) {
    return true ;
  }
  return false ;
@@ -125,7 +125,7 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // Define esta propiedad de todos los usuarios como True.
    // Retornar el arreglo.
    // Tu código:
-   for (var i=0 ; i<usuarios.length ; i++){
+   for (var i=0 ; i<objetoMuchosUsuarios.length ; i++){
  usuarios[i].esPremium = true
  } 
  return objetoMuchosUsuarios ;
