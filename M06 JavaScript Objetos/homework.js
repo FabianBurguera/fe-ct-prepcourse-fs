@@ -76,7 +76,11 @@ function tieneEmail(objetoUsuario) {
    // En ese caso retornar True. Caso contrario, False.
    // Tu código:
 
-   return objetoUsuario.hasOwnProperty('email') ;
+   if (objetoUsuario['email']){
+      return true ; 
+   } else {
+      return false ;
+   }
 }
 function tienePropiedad(objeto, propiedad) {
    // Verifica si el objeto recibido posee una
@@ -135,7 +139,7 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Tu código:
    var contador = 0 ;
    for (var i=0 ;i<objetoUsuario.posts.length ; i++ ){
-     contador = contador + posts[i].likes ;
+     contador = contador + this.posts[i].likes ;
 }
 return contador ;
 }
