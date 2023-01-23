@@ -161,6 +161,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
   var preciofinal = this.precio-(this.precio*this.porcentajeDeDescuento) ; 
 return preciofinal ;
 } ;
+return calcularPrecioDescuento(objetoProducto) ; 
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
