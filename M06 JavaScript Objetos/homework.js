@@ -160,7 +160,8 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
  objetoProducto.calcularPrecioDescuento=function (){
   var preciofinal = objetoProducto.precio-(objetoProducto.precio*objetoProducto.porcentajeDeDescuento) ; 
 return preciofinal ;
-} ;}
+} ;
+return objetoProducto ; }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
