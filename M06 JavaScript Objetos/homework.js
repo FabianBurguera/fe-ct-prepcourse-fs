@@ -161,6 +161,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
   preciofinal = this.precio-(this.precio*this.porcentajeDeDescuento) ; 
 };
 return objetoProducto.preciofinal ;
+}
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
