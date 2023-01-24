@@ -19,7 +19,7 @@ function crearUsuario() {
      this.password=password ;
    }
    saludar (){
-    return 'Hola, mi nombre es' + this.nombre ;
+    return 'Hola, mi nombre es ' + this.nombre ;
    }
 };
    return Usuario;
@@ -46,6 +46,7 @@ function agregarStringInvertida() {
      invertida.push(this[i]) ;
    }
    var invertidastring = invertida.join ;
+   return invertidastring ;
  }
 
 }
