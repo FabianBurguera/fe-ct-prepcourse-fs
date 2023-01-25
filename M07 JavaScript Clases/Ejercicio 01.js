@@ -43,12 +43,13 @@ function agregarStringInvertida() {
  String.prototype.reverse = function(){
   var nuevastring='';
    for (var i=this.length ; i>=0 ; i--){
-    nuevastring=nuevastring + charAt(i) ;
+    nuevastring=nuevastring + this.charAt(i) ;
    }
    return nuevastring ;
  };
 
-}
+
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
