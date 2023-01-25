@@ -47,7 +47,7 @@ function agregarStringInvertida() {
    }
    return nuevastring ;
  };
-
+}
 
 
 
