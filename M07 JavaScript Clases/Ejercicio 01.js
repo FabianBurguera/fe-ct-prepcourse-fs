@@ -41,13 +41,12 @@ function agregarStringInvertida() {
    // El método debe llamarse "reverse".
    // [PISTA]: necesitarás utilizar el objeto "this".
  String.prototype.reverse = function(){
-  var invertida =[]
+  var nuevastring='';
    for (var i=this.length ; i>=0 ; i--){
-     invertida.push(this[i]) ;
+    nuevastring=nuevastring + charAt(i) ;
    }
-   var invertidastring = invertida.join ;
-   return invertidastring ;
- }
+   return nuevastring ;
+ };
 
 }
 
