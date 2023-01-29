@@ -67,7 +67,7 @@ function filter(arrayOfStrings) {
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
  nuevoarreglo =[];
-   for (let i=0 ; i<array.length ; i++){
+   for (let i=0 ; i<arrayOfStrings.length ; i++){
  if(arrayOfString[i][0]==='a'){
  nuevoarreglo.push(arrayOfString[i]);
 }
