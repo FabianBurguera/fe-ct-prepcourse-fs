@@ -68,8 +68,8 @@ function filter(arrayOfStrings) {
    // Tu código:
  nuevoarreglo =[];
    for (let i=0 ; i<arrayOfStrings.length ; i++){
- if(arrayOfString[i][0]==='a'){
- nuevoarreglo.push(arrayOfString[i]);
+ if(arrayOfStrings[i][0]==='a'){
+ nuevoarreglo.push(arrayOfStrings[i]);
 }
 }
 return nuevoarreglo ; 
