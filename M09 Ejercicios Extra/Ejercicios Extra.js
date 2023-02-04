@@ -9,7 +9,7 @@ function deObjetoAarray(objeto) {
 //*recibo un objeto, ejemplo objeto = { a:1,b:2,c:3}
 // declaro un array 
 let ArrArr = Object.entries(objeto) ;
-
+return ArrArr ; 
 }
 
 
