@@ -36,24 +36,23 @@ function numberOfCharacters(string) {
    });
    return contador ;}
 
-  
-function capToFront(string) {
-   // Recibes un string con algunas letras en mayúscula y otras en minúscula.
-   // Debes enviar todas las letras en mayúscula al comienzo del string.
-   // Retornar el string.
-   // [EJEMPLO]: soyHENRY ---> HENRYsoy
-   // Tu código:
-    var array=string.split('') ;
-    var arrayOrdenado=[] ;
-    for (let i=0 ; i<array.length ; i++){
-        if (array[i]===array[i].toUpperCase()){
-            arrayOrdenado.unshift(array[i]);
-        } else {
-            arrayOrdenado.push(array[i]);
-        }
-    }
-    return arrayOrdenado.join('') ;
-    }
+   function capToFront(string){
+      //Lo borre sin querer , aca se recibe un string , y se ordenenara por mayusculas 
+      //y minusculas
+   var array=string.split('') ;
+   var arrayMAYUS=[] ;
+   var arrayminus=[] ;
+   for (let i=0 ; i<array.length ; i++){
+       if (array[i]===array[i].toUpperCase()){
+           arrayMAYUS.push(array[i]);
+       } else {
+           arrayminus.push(array[i]);
+       }
+   }
+   var arrayordenado=arrayMAYUS.concat(arrayminus).join('') ;
+   return arrayordenado ;
+}
+
 
 
 function asAmirror(frase) {
