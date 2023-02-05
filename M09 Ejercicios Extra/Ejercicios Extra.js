@@ -21,10 +21,22 @@ function numberOfCharacters(string) {
    //retornar un objeto donde cada propiedad es una de las
    // letras del string, y su valor es la cantidad de veces que se repite en el string.
    // Las letras deben estar en orden alfabético.
-   // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
+   // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> 
+   //{ a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
    // Tu código:
-}
+   var array=string.split('');
+   var ordenando=array.sort()
+   var contador ={} ;
+   ordenado.forEach(function(propid){
+      if (contador[propid] === undefined){
+         contador[propid] = 1 ;
+      }else {
+         contador[propid] += 1 
+      }
+   });
+   return contador ;}
 
+  
 function capToFront(string) {
    // Recibes un string con algunas letras en mayúscula y otras en minúscula.
    // Debes enviar todas las letras en mayúscula al comienzo del string.
