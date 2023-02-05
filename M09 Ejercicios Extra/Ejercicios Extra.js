@@ -43,7 +43,18 @@ function capToFront(string) {
    // Retornar el string.
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
-}
+    var array=string.split('') ;
+    var arrayOrdenado=[] ;
+    for (let i=0 ; i<array.length ; i++){
+        if (array[i]===array[i].toUpperCase()){
+            arrayOrdenado.unshift(array[i]);
+        } else {
+            arrayOrdenado.push(array[i]);
+        }
+    }
+    return arrayOrdenado.join('') ;
+    }
+
 
 function asAmirror(frase) {
    // Recibes una frase. Tu tarea es retornar un nuevo string en el que el orden de las palabras sea el mismo.
