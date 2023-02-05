@@ -53,14 +53,20 @@ function numberOfCharacters(string) {
    return arrayordenado ;
 }
 
-
-
 function asAmirror(frase) {
-   // Recibes una frase. Tu tarea es retornar un nuevo string en el que el orden de las palabras sea el mismo.
-   // La diferencia es que cada palabra estará escrita al inverso.
-   // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
-   // Tu código:
+      // Recibes una frase. Tu tarea es retornar un nuevo string en el que 
+      //el orden de las palabras sea el mismo.
+      // La diferencia es que cada palabra estará escrita al inverso.
+      // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
+      // Tu código:
+   var array=frase.split('');
+   var arrayinv=[] ;
+       for (let i=0 ; i<array.length ; i++){
+           arrayinv.unshift(array[i]);}
+   var fraseinv=arrayinv.join('');
+       return fraseinv ;
 }
+
 
 function capicua(numero) {
    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
