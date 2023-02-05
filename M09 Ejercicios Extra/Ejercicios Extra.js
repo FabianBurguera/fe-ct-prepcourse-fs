@@ -27,7 +27,7 @@ function numberOfCharacters(string) {
    var array=string.split('');
    var ordenando=array.sort()
    var contador ={} ;
-   ordenado.forEach(function(propid){
+   ordenando.forEach(function(propid){
       if (contador[propid] === undefined){
          contador[propid] = 1 ;
       }else {
