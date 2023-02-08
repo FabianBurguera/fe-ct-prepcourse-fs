@@ -120,7 +120,7 @@ function buscoInterseccion(array1, array2) {
   if (array1.length>=array2.length){ //si array1 es mas largo
    for (let i=0 ; i<array2.length ;i++){ //verifico sobre array1 longitud
     if (array1.includes(array2[i])){
-      interArrayrray.push(array2[i]);
+      interArray.push(array2[i]);
     }}
 } else {
    for (let i=0 ; i<array1.length ;i++){
