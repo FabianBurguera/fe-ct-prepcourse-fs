@@ -59,12 +59,13 @@ function asAmirror(frase) {
       // La diferencia es que cada palabra estará escrita al inverso.
       // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
       // Tu código:
-   var array=frase.split(' ');
-   var arrayinv=[] ;
-       for (let i=0 ; i<array.length ; i++){
-           arrayinv.unshift(array[i]);}
-   var fraseinv=arrayinv.join(' ');
-       return fraseinv ;
+ var array = frase.split (' ');
+ var arrayInv=[] ;
+ for (let i=0 ; i<array.length ; i++){
+   arrayInv[i] = array[i].split('').reverse().join('') ;
+ }
+ var fraseInv=arrayInv.join(' ')
+ return fraseInv ; 
 }
 
 
