@@ -93,21 +93,42 @@ return filtrado ;
 
 function sortArray(arrayOfStrings) {
    // Recibes un arreglo de strings.
-   // Debe retornar un nuevo arreglo, pero con las palabras ordenadas en orden creciente a partir
+   // Debe retornar un nuevo arreglo, pero con las palabras ordenadas en orden
+   // creciente a partir
    // de la longitud de cada string.
-   // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
+   // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  --->
+   // [“You", "are", "looking", "beautiful"]
    // Tu código:
-}
+   let sortDeArray = arrayOfStrings.sort(function(a, b) {
+      return a.length - b.length; });
+      return sortDeArray ;
+   
+
+} 
 
 function buscoInterseccion(array1, array2) {
    // Recibes dos arreglos de números.
-   // Debes retornar un nuevo arreglo en el que se guarden los elementos en común entre ambos arreglos.
+   // Debes retornar un nuevo arreglo en el que se guarden los elementos en común
+   // entre ambos arreglos.
    // [EJEMPLO]: [4,2,3] U [1,3,4] = [3,4].
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
+   var interarray =[]
+   if (array1.length>=array2.length){
+      for (let i=0 ; i<array2.length ;i++){
+       if (array2[i]==array1[i]){
+         interarray.push(array2[i]);
+       }}
+   } else {
+      for (let i=0 ; i<array1.length ;i++){
+         if (array1[i]==array2[i]){
+           interarray.push(array1[i]);
+   }
+      }
 }
-
+return interarray ;
+}
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    deObjetoAarray,
