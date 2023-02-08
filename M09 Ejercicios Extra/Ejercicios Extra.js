@@ -115,21 +115,20 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
-   var interarray =[]
-   if (array1.length>=array2.length){
-      for (let i=0 ; i<array2.length ;i++){
-       if (array2[i]==array1[i]){
-         interarray.push(array2[i]);
-       }}
-   } else {
-      for (let i=0 ; i<array1.length ;i++){
-         if (array1[i]==array2[i]){
-           interarray.push(array1[i]);
-   }
-      }
+  //primero declaro un array nuevo
+  var interArray=[] ;
+  if (array1.length>=array2.length){ //si array1 es mas largo
+   for (let i=0 ; i<array2.length ;i++){ //verifico sobre array1 longitud
+    if (array1.includes(array2[i])){
+      interArrayrray.push(array2[i]);
+    }}
+} else {
+   for (let i=0 ; i<array1.length ;i++){
+     if (array2.includes(array1[i])){
+      interArray.push(array1[i]) ;
+     }
 }
-return interarray ;
-}
+   }return interArray; }
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    deObjetoAarray,
